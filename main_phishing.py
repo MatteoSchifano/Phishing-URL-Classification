@@ -22,7 +22,7 @@ def make_dataset(path: str, n_cols: int=10) -> tuple[pd.DataFrame, pd.Series]:
     
 
 def top_correleted_columns(corr: pd.DataFrame, target: str, top_n:int = 5) -> np.array:
-    '''Restituisce un array di nomi di colonne che sono più correlate con la colonna di `target`
+    '''Restituisce un array di nomi di colonne che sono più correlate in assoluto, con la colonna di `target`
 
     :param pd.DataFrame corr: correlazione del dataframe, consiglio di passare data.corr()
     :param str target: nome della colonna di `target`, la y 
